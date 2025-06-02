@@ -4,8 +4,8 @@
   "description": "simple chat application by twahanur",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon app.js",
-    "prod": "node app.js"
+    "prod": "nodemon app.js",
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",

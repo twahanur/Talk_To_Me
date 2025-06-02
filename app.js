@@ -54,7 +54,6 @@ app.use(express.static(path.join(__dirname, "public")));
 // parse cookies
 app.use(cookieParser(process.env.COOKIE_SECRET));
 
-
 // routing setup
 app.use("/", loginRouter);
 app.use("/users", usersRouter);
@@ -66,6 +65,7 @@ app.use(notFoundHandler);
 // common error handler
 app.use(errorHandler);
 
-server.listen(process.env.PORT, () => {
-  console.log(`app listening to port ${process.env.PORT}`);
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
 });

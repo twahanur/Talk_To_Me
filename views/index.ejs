@@ -10,6 +10,7 @@
         <form method="post" action="/">
           <input
             type="text"
+            value="twahanur@gmail.com"
             name="username"
             placeholder="enter mobile or email"
             value="<%= data.username %>"
@@ -17,7 +18,7 @@
           <% if (errors.username) { %>
             <p class="error show"><%= errors.username.msg %></p>
           <% } %>
-          <input type="password" name="password" placeholder="enter password" />
+          <input type="password" name="password" value="Twahanur@1" placeholder="enter password" />
           <% if (errors.password) { %>
             <p class="error show"><%= errors.password.msg %></p>
           <% } %>
@@ -28,7 +29,7 @@
           <input type="submit" value="Login" />
           
         </form>
-        <p class="center">Did not have any account? <span><a href="#" onclick="openModal()">Register</a></span></p>
+        <p class="center" style="color: white;">Did not have any account? <span><a href="#" onclick="openModal()">Register</a></span></p>
         <div class="new-user">
           
         </div>
